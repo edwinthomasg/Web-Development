@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="EventRegistration.css">
+    <title>Event Registration</title>
+    
+</head>
+<body>
+    
+        <h2 id="form-title">EVENT REGISTRATION FORM</h2>
+        <form action="registered.html" onsubmit="return validateRequiredField()">
+            <div id="event-form">
+            <label id="name-label">Name</label>
+            <input type="text" id="first-name" placeholder="First Name">
+            <div class="error">
+                <p id="firstname-error">Firstname can't be empty</p> 
+             </div>
+            <input type="text" id="last-name" placeholder="Last Name">
+            <div class="error">
+               <p id="lastname-error">Lastname can't be empty</p> 
+            </div>
+            <br><br>
+            <label id="company-label">Company</label>
+            <input type="text" id="company-name">
+            <div class="error">
+                <p id="company-error">Company name can't be empty</p> 
+             </div>
+            <br><br>
+            <label id="email-label">Email</label>
+            <input type="email" id="user-email" placeholder="username@gmail.com">
+            <div class="error">
+                <p id="email-error">Email can't be empty</p> 
+             </div>
+            <br><br>
+            <label id="phone-label">Phone</label>
+            <input type="tel" id="area-code" placeholder="Area Code">
+            <!--  -->
+            <div class="error">
+                <p id="area-error">Area code can't be empty</p> 
+             </div>
+            <input type="tel" id="user-number" placeholder="Phone Number">
+            <!--  -->
+            <div class="error">
+                <p id="number-error">Number can't be empty</p> 
+             </div>
+            <br><br>
+            <label id="subject-label">Subject</label>
+            <select id="subject-choice">
+                <option value="Chooseoption">Choose Option</option>
+                <option value="Bfs">Bfs</option>
+                <option value="Eba">Eba</option>
+                <option value="Dotnet">Dotnet</option>
+            </select>
+            <div class="error">
+                <p id="subject-error">Choose anyone of the field</p> 
+            </div>
+            
+            <br><br>
+            <p id="customer-text">Are you an existing customer</p>
+            <br>
+            <div class="CustChoice">
+                <input type="radio" id="cust-yes" name="CustomerChoice">Yes
+                <input type="radio" id="cust-no" name="CustomerChoice">No
+            </div>
+            
+            <br>
+            <br>
+            <button type="submit" id="submit-button">Submit</button>
+            <br>
+            <button type="reset" id="reset-button">Clear</button>
+            <br>
+        </div>
+        </form>
+        <script src="EventRegistration.js"></script>
+</body>
+</html>

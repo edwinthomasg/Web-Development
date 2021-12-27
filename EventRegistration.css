@@ -1,0 +1,165 @@
+
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        body{
+            background-color: blueviolet;
+            margin-top: 80px;
+            margin-left: 30px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #event-form{
+            position: relative;
+            top:50px;
+            left:-60px;
+        }
+        #form-title{
+            margin: auto; 
+            background-color:rgb(0, 0, 0,0.7);
+            color: white;
+            text-align: center;
+            border-radius:15px 15px 0px 0px;
+            padding: 20px;
+            width: 700px;
+            
+        }
+        form{
+            background-color: white;
+            width: 700px;
+            margin: auto;
+            padding: 20px;
+            height: 700px;
+            line-height: 20px;
+        } 
+        input,select{
+            border: 2px black solid;
+        }
+        form label,#customer-text,input[type="radio"]{
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 130px;
+        }
+        #first-name,#last-name,#company-name,#user-email,#area-code,#user-number,#subject-choice{
+            width: 150px;
+            padding: 10px;
+            
+        }
+        #first-name{
+            margin-left:80px;
+        }
+        #last-name{
+            margin-left:520px;
+            position: relative;
+            bottom: 60px;
+        }
+        .error{
+           color: red;
+           visibility: hidden;
+           font-size: 12px;
+        }
+        #firstname-error{
+            position: relative;
+            left: 270px;
+            top: 5px;
+        }
+        #lastname-error{
+            position: relative;
+            left: 525px;
+            bottom: 55px;
+        }
+        #company-label{
+            position: relative;
+            bottom: 70px;
+        }
+        #company-name{
+            position: relative;
+            bottom: 70px;
+            left:45px;
+            width: 410px;
+        }
+        #company-error{
+            position: relative;
+            left:270px;
+            bottom: 65px;
+            
+        }
+        #email-label{
+            position: relative;
+            bottom: 80px;
+        }
+        #user-email{
+            position: relative;
+            bottom: 80px;
+            left:78px;
+            width: 410px;
+        }
+        #email-error{
+            position: relative;
+            left:270px;
+            bottom: 75px;
+        }
+        #phone-label{
+            position: relative;
+            bottom: 100px;
+        }
+        #area-code{
+            margin-left:74px;
+            position: relative;
+            bottom: 90px;
+        }
+        #user-number{
+            margin-left:525px;
+            position: relative;
+            bottom: 150px;
+        }
+        #area-error{
+            position: relative;
+            left:270px;
+            bottom: 85px;
+        }
+        #number-error{
+            position: relative;
+            left:530px;
+            bottom: 145px;
+
+        }
+        #subject-label{
+            position: relative;
+            bottom: 170px;
+        }
+        #subject-choice{
+            position: relative;
+            bottom: 170px;
+            left:60px;
+            width:440px;
+        }
+        #subject-error{
+            position: relative;
+            left:265px;
+            bottom: 165px;
+        }
+        #customer-text{
+            position: relative;
+            bottom: 180px;
+        }
+        .CustChoice
+        {
+            position: relative;
+            bottom: 185px;
+        }
+        #submit-button{
+            position: relative;
+            bottom:170px;
+            width: 80px;
+            padding: 10px;
+            left: 250px;
+        }
+        #reset-button{
+            position: relative;
+            bottom:210px;
+            width: 80px;
+            padding: 10px;
+            left: 480px;
+        }
+    
