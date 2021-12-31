@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Employee Management System</title>
+    <style>
+        body{
+            background-color: rgb(180, 232, 241);
+        }
+        .form-center{
+           background-color: rgba(0, 0, 0, 0.774);
+           margin-left: 500px;
+           margin-top: 150px;
+            width: 40%;
+            height: 500px;
+            
+        }
+
+        .form-center h1{
+            padding: 15px;
+            text-align: center;
+            color: rgb(205, 219, 8);
+        }
+        #employee-form{
+            margin-top: 40px;
+        }
+        label{
+            padding:100px;
+            color: violet;
+        }
+        #employee-id #id{
+           margin-left: 24px;
+           width: 166px;
+        }
+        #employee-gender #gender{
+            margin-left: 60px;
+            width: 170px;
+            padding: 2px;
+        }
+        #employee-designation #designation{
+            margin-left: 28px;
+            width: 170px;
+            padding: 2px;
+        }
+        #birth-date #birth{
+            margin-left: 37px;
+            width: 166px;
+        }
+        #join-date #join{
+            margin-left: 44px;
+            width: 166px;
+        }
+        #phone-number #phone{
+            margin-left: 9px;
+        }
+        #employee-email #user-email{
+            margin-left: 68px;
+        }
+        #gender{
+            color: white;
+        }
+        #gender #gender-1{
+            margin-left: 56px;
+        }
+        #submit-button{
+            
+            margin-top: 20px;
+           margin-left: 300px;
+          
+        }
+        button{
+            background-color:  rgb(205, 219, 8);
+            cursor: pointer;
+        }
+         #employee-name i{
+             position: absolute;
+             margin-left: 312px;
+             font-size: 12px;
+             padding: 4px;
+             color: grey;
+         }   
+        #employee-id i{
+            position: absolute;
+             margin-left: 312px;
+             font-size: 12px;
+             padding: 4px;
+             color: grey;
+        }
+        #phone-number i{
+            position: absolute;
+             margin-left: 312px;
+             font-size: 12px;
+             padding: 4px;
+             color: grey;
+        }
+        #employee-email i{
+            position: absolute;
+             margin-left: 312px;
+             font-size: 12px;
+             padding: 4px;
+             color: grey;
+        }
+        #rating{
+            margin-left: 98px;
+            color:violet;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="form-center">
+      <h1>Aspire Systems</h1>
+       
+        
+       <form action="" id="employee-form">
+           <div id="employee-name">
+            <i class="fa fa-user-o"></i>
+            <label for="">Employee Name</label>
+            <input type="text" id="name" pattern="[a-zA-Z]+" required><br><br>
+           </div>
+          <div id="employee-id">
+              <i class="fa fa-id-card-o"></i>
+            <label for="">Employee Id</label>
+            <input type="text" id="id" pattern="ACE[0-9]{4}" required><br><br>
+          </div>
+          <div id="gender">
+            <label for="">Gender</label>
+        
+            <input type="radio" name="gen" id="gender-1">Male
+            <input type="radio" name="gen" id="gender-2">Female
+            <input type="radio" name="gen" id="gender-3">Others
+          </div>
+            <br>
+            
+            <div id="employee-designation">
+                <label for="">Designation</label>
+                <select name="" id="designation" required>
+                    <option value="Choose the designation">Choose the designation</option>
+                    <option value="Developer">Developer</option>
+                    <option value="Analyst">Analyst</option>
+                    <option value="Architect">Architect</option>
+                </select>
+            </div>
+            <br>
+
+            <div id="birth-date">
+                <label for="">Birth Date</label>
+                <input type="date" id="birth" required><br><br>
+            </div>
+            <div id="join-date">
+                <label for="">Join Date</label>
+                <input type="date" id="join" required><br><br>
+            </div>
+            <div id="phone-number">
+                <i class="fa fa-phone"></i>
+                <label for="">Phone Number</label>
+                <input type="tel" id="phone" pattern="[6789][0-9]{9}"required><br><br>
+            </div>
+            <div id="employee-email">
+                <i class="fa fa-envelope"></i>
+                <label for="">Email</label>
+                <input type="email" id="user-email" pattern="[a-z]+[0-9]*@[a-z]+.com" required><br><br>
+            </div>
+            <div id="rating">
+                 Website rating <meter min="1" max="10" value="8" id="met"></meter>
+            </div>
+           <div id="submit-button">
+                <button type="submit">Submit</button>
+           </div>
+           
+       </form>
+    </div>
+</body>
+</html>
