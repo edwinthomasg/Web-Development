@@ -10,8 +10,8 @@ wss.on('connection',function (socket) {
     console.log("connection ready");
 
     socket.on('message',function (msg) {
-        console.log("received by server : "+msg);
-        socket.send(msg);
-        socket.send("hi client");
+        console.log("Client : "+msg);
+        // socket.send(msg);
+         socket.send("Hi client");
     })
 })
