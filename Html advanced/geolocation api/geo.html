@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoLocation</title>
+</head>
+<body>
+    <button onclick="getGeo()">Click</button>
+    <a id="map-link"></a>
+    <p id="para"></p>
+    <script>
+        function getGeo(){
+            if(navigator.geolocation == false){
+            console.log("Not supported by  your browser")
+            }
+             else{
+            navigator.geolocation.getCurrentPosition(success,error)
+            }
+        }
+        
+        function success(position){
+            const lat = position.coords.latitude
+            const lon = position.coords.longitude
+            let mapLink = document.getElementById("map-link");
+            let para = document.getElementById("para")
+            
+            mapLink.href = `https://www.openstreetmap.org/#map=18/${lat}/${lon}`
+            mapLink.textContent = `Latitude : ${lat} and Longitude ${lon}`
+           
+        }   
+        function error(err){
+            document.getElementById("para").innerText = "Not supported"
+        }
+        </script>
+</body>
+</html>

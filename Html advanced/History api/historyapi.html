@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Api</title>
+</head>
+<body>
+    <h1>Home</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, alias!</p>
+    <input type="button" value="About" id="abt">
+    <input type="button" value="Contact" id="cnt">
+    <script>
+        
+       document.getElementById("abt").addEventListener('click',()=>{
+            history.pushState(null,null,'about')
+            document.body.append("Display About contents")
+       })
+            
+       document.getElementById("cnt").addEventListener('click',()=>{
+            history.pushState(null,null,'contact')
+            document.body.append("Display Contact info")
+       })
+       window.addEventListener('popstate',(event)=>
+       console.log(event))
+            
+                  
+       
+    </script>
+</body>
+</html>
