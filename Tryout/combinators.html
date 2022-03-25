@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Property</title>
+    <style>
+        span{
+            background-color: yellow;
+        }
+        div span{
+            background-color: blue; /*descendent*/
+        }
+        div>span{
+            background-color:green /*child combinators*/
+        }
+        div~p{
+            background-color:red /*general sibling*/
+        }
+        div+p{
+            background-color:violet /*adjacent sibling*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading</h1>
+    <div>
+        <p>1st child of div</p>
+        <p>2nd child of div</p>
+        <p>3rd child of div</p>
+       
+        <span>3rd Child Span
+            <span>1st Inner Child Span of span</span>
+        </span>
+    </div>
+    <br>
+    <span>Outer Span 1</span>
+    <span>Outer Span 2</span>
+    <p>1st para Outer of div</p>
+    <p>2nd para Outer of div</p>
+</body>
+</html>

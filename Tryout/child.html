@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree structural psuedo classes</title>
+    <style>
+        /* div:nth-child(1){ 
+            background-color: red;
+        } */
+        div>p:nth-child(2){
+            background-color: yellow; /*1based index*/
+        }
+        div>ul>li:nth-child(1) /*from first it counts*/
+        {
+            color: red;
+        }
+        div>p:first-child{
+            color: rgb(255, 127, 217);
+        }
+        div>p:last-child{
+            color: rgb(0, 189, 247);
+        }
+        div>h2:only-child{
+            color: olivedrab;
+        }
+        div:first-of-type{
+            background-color: red
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>Heading</h1>  -->
+    <div class="div1">
+        <h2>Head 2</h2>
+        <p>1st child of div</p>
+        <p>2nd child of div</p>
+        <p>3rd child of div</p>
+       
+        <span>3rd Child Span
+            <span>1st Inner Child Span of span</span>
+        </span>
+    </div>
+    <div>
+        <p>1st child of div</p>
+        <p>2nd child of div</p>
+        <p>3rd child of div</p>
+       
+        
+    </div>
+    <div>
+        <p>1st child of div</p>
+        <p>2nd child of div</p>
+        <p>3rd child of div</p>
+       
+        <span>3rd Child Span
+            <span>1st Inner Child Span of span</span>
+        </span>
+    </div>
+    
+    <br>
+    <span>Outer Span 1</span>
+    <span>Outer Span 2</span>
+    <p>1st para Outer of div</p>
+    <p>2nd para Outer of div</p>
+    <input type="button" value="click" id="btn">
+    <div>
+        <ul>
+            <li>python</li>
+            <li>c++</li>
+            <li>java</li>
+        </ul>
+    </div>
+    <ul>
+        <li>c</li>
+        <li>c</li>
+        <li>c</li>
+    </ul>
+    <script>
+     document.getElementById("btn").addEventListener('click',()=>
+     console.log(document.getElementsByTagName("div"))
+     
+     )
+        
+    </script> 
+   
+</body>
+</html>
