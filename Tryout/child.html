@@ -31,6 +31,9 @@
     </style>
 </head>
 <body>
+     <div class="div1">div 1</div>
+     <p>1st para</p>
+    
     <!-- <h1>Heading</h1>  -->
     <div class="div1">
         <h2>Head 2</h2>
@@ -64,7 +67,7 @@
     <span>Outer Span 2</span>
     <p>1st para Outer of div</p>
     <p>2nd para Outer of div</p>
-    <input type="button" value="click" id="btn">
+    
     <div>
         <ul>
             <li>python</li>
@@ -77,10 +80,19 @@
         <li>c</li>
         <li>c</li>
     </ul>
+    <input type="button" value="click" id="btn">
     <script>
      document.getElementById("btn").addEventListener('click',()=>
-     console.log(document.getElementsByTagName("div"))
-     
+     {
+          console.log(document.body.children)
+          console.log(document.getElementsByTagName("ul")[0].children)
+          document.getElementsByTagName("ul")[0].children
+        console.log(document.body.children[0])
+        document.body.children[0].style.backgroundColor = "green"
+        const newElement = document.createElement('p')
+        newElement.innerHTML = "New Para"
+        document.body.appendChild(newElement)
+     }
      )
         
     </script> 
