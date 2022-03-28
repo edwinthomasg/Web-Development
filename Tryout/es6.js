@@ -9,3 +9,5 @@ function display(){
     console.log(n);
 }
 display();
+var x = 1+2+"5"
+console.log(x)
