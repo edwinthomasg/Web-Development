@@ -7,10 +7,15 @@
     <title>Display</title>
     <style>
         div{
-            display: flex;
+            display: none;
+            width: 50%;
+          height: 200px;
         }
         span{
-            display: inline-block;
+          display: block;
+          width: 50%;
+          height: 200px;
+          visibility: hidden;
         }
         .d1,#s1{
             background-color: yellow;
@@ -26,9 +31,15 @@
         <div class="d2">Div2</div>
     </div>
     <span id="s1">Span1 <span id="s2">Inner span</span></span>
+    <p id="para">Hello<span>Span element</span>
+    </p>
     <script>
-        document.body.children[0].style.color="green"
-        console.log(document.body.children[0])
+        // document.body.children[0].style.color="green"
+        // console.log(document.body.children[0])
+        console.log(document.getElementById("para").innerHTML,
+        document.getElementById("para").innerText)
+        console.log(document.getElementById("para").textContent)
     </script>
+   
 </body>
 </html>

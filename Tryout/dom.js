@@ -17,16 +17,34 @@
 //     alert(select.options[select.selectedIndex].value);
     
 // }
-user = {
-    name:"vasi",
-    age:21,
-    show:function(){
-        console.log(this.name)
-        fun = () => {
-            console.log(this.name)
-        }
+// user = {
+//     name:"vasi",
+//     age:21,
+//     show:function(){
+//         console.log(this.name)
+//         fun = () => {
+//             console.log(this.name)
+//         }
         
-        fun()
-    }
+//         fun()
+//     }
+// }
+// user.show()
+
+console.log("Hello")
+// setTimeout(()=>{
+//     console.log("Time"),30000
+// })
+console.log("End")
+let set = new Set([1,2,3,4]);
+set.add(1)
+set.add(6)
+// set.clear()
+console.log(set)
+let map = new Map([["name","edwin"],["age","21"]])
+map.clear()
+console.log(map)
+for(var i = 0; i < 5; i++)
+{
+    console.log(Math.round(Math.random(10,20)))
 }
-user.show()
