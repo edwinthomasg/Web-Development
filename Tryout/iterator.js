@@ -16,6 +16,8 @@ count = 0
     }
    
 }
+let itr = res[Symbol.iterator]()
+console.log(itr.next())
 for(let ans of res){
     console.log(ans)
 }
