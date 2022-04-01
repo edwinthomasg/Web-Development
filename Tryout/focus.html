@@ -5,17 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Focus</title>
+    
 </head>
 <body>
+  <style>
+    .margin{
+      background-color: lightgoldenrodyellow;
+      width:300px;
+      height:200px;
+    }
+    .border{
+      background-color: rgb(158, 91, 158);
+      width:200px;
+      height:150px;
+      position: relative;
+      left: 45px;
+      top:20px;
+    }
+    .text{
+      background-color: aliceblue;
+      display: inline;
+    }
+  </style>
     <input type="text">
+    <div class="margin">
+      <div class="border">
+        <div class="text">content</div>
+      </div>
+    </div>
 <script>
   document.querySelector("input").focus();
 
   console.log(document.activeElement.tagName);
-  // → INPUT
-//  document.querySelector("input").blur();
- // console.log(document.activeElement.tagName);
-  // → BODY
+
 </script>
 </body>
 </html>
